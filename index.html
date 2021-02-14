@@ -1,31 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Face API - Pratham Inamdar</title>
-  <script defer src="face-api.min.js"></script>
-  <script defer src="script.js"></script>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    canvas {
-      position: absolute;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Facial Emotion Recognition | Pratham Inamdar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/face.styles.css">
+    <script defer src="face-api.min.js"></script>
+    <script defer src="script.js"></script>
+    <style>
+        body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+            'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+            sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
 </head>
+
 <body>
-  <video id="video" width="720" height="560" autoplay muted></video>
+    <h1 style="display:inline"><i class="fab fa-connectdevelop"></i> Facial Emotion Recognition</h1>
+        <br>
+            <h4 style="display:inline" id="by"><a href="https://prathami1.studio">Built By Pratham Inamdar</a></h4>
+        <br>
+        <br>
+    <p>
+        A primitive understanding of the world behind facial recognition, with the use of <a href="https://justadudewhohacks.github.io/face-api.js/docs/index.html">Face API</a>.
+        <br> <br>
+        This webpage utilizes tensorflow.js's core API, which is fed through Face API. In order to recognize emotions, we provided the API with models and trained it to verify one's facial expressions, 
+        such as if they are smiling, frowning, blank-faced, etc.
+    </p>
+    <center>
+        <div id="support">Your Browser is Supported</div>
+    </center>
+    <br>
+    <main>
+    <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="ad79052ab1eb9bf5ac5ab937-|49" defer=""></script>
+    <div>
+    <!--<video class="scanner canvas" id="video" width="400" height="300" autoplay muted></video>-->
+    </div>
 </body>
-  <footer>
-    <h2>Created by <href="https://prathami1.studio">Pratham Inamdar.</h2>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/UAParser.js/0.7.21/ua-parser.min.js"
+    type="ad79052ab1eb9bf5ac5ab937-text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+<script src="index.js" type="ad79052ab1eb9bf5ac5ab937-text/javascript"></script>
 </html>
